@@ -1,121 +1,127 @@
 body {
-  width: 100%;
-  height: 100%;
-  background-color: #EFDEC3;
-}
-
-h1{
-  font-size: 100px;
+    width: 100%;
+    height: 100%;
+    background-color: #EFDEC3;
+  }
   
-}
-
-p{
-  font-size: 45px;
-}
+  h1{
+    font-size: 75px;
+    margin-left: 8px;
+  }
   
-@font-face {
-  font-family: mom;
-  src: url("fonts/Mom«t___.ttf")
-}
-  
-.carned{
-  font-size: 30px;
-  margin-top: 8px;
-  margin-left: 10px;
-  font-family: mom;
-  display: inline-block;
-}
-  
-.circulo{
-  width: 700px;    
-  height: 70px;
-  border-radius: 10px;
-  background-color: red;
-  display: inline-block;
-  right: 25px;
-  position: absolute;
-}
-  
-a{
+  p{
     font-size: 25px;
+    margin-left: 8px;
+  }
+    
+  @font-face {
     font-family: mom;
-    text-decoration: none;
-    color: white;
-    margin-right: 30px;
-}
-  
-nav{
-    margin-top: 21px;
-    padding-left: 30px;
-
-}
-
-.main{
-    margin-left: 55px;
-    margin-top: 170px;
+    src: url("fonts/Mom«t___.ttf")
+  }
+    
+  .carned{
     font-size: 30px;
-}
+    margin-top: 8px;
+    margin-left: 10px;
+    font-family: mom;
+    display: inline-block;
+  }
+    
+  .circulo{
+    width: 500px;    
+    height: 70px;
+    border-radius: 10px;
+    background-color: red;
+    display: inline-block;
+    right: 25px;
+    position: absolute;
+  }
+    
+  a{
+      font-size: 16px;
+      font-family: mom;
+      text-decoration: none;
+      color: white;
+      margin-right: 30px;
+  }
 
-.button{
-  margin-bottom: 25px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgb(222, 9, 9);
-  border: 3px solid black;
-  background: none;
-  padding: 10px;
-  position: relative;
-  overflow: hidden;
-  transition: color 1s;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  border-color: #79717A;
-  border-radius:12px;
-  margin:10px;
-  margin-top: 70px;
-  transition: 0.8s;
+  a:hover{
+      color: #111;
+  }
+    
+  nav{
+      margin-top: 25px;
+      padding-left: 36px;
   
-}
+  }
   
+  .main{
+      margin-left: 55px;
+      margin-top: 170px;
+      font-size: 30px;
+  }
   
+  .button{
+    margin-bottom: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(222, 9, 9);
+    border: 3px solid black;
+    background: none;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    border-color: #79717A;
+    border-radius:12px;
+    margin:10px;
+    margin-top: 70px;
+    transition: 0.8s;
+    
+  }
+    
+    
+    .button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #111;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius: 50% 50% 0 0 ;
+  }
+    
   .button::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #111;
-  z-index: -1;
-  transition: 0.8s;
-  top: 0;
-  border-radius: 50% 50% 0 0 ;
-}
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    
+  }
+    
+  .button:hover::before{
+    height: 180%;
+  }
+  #butaolink::before{
+    color: white;
+  }
   
-.button::before{
-  top: 0;
-  border-radius: 0 0 50% 50%;
+  #butaolink{
+    margin-left: 22px;  
+    text-decoration: none;
+    color: black;
+  }
   
-}
+  #butaolink:hover{
+    color: white;
+    text-decoration: none;
+  }
   
-.button:hover::before{
-  height: 180%;
-}
-a::before{
-  color: white;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-a:hover{
-  color: white;
-  text-decoration: none;
-}
-
-a:active{
-  color: white;
-  text-decoration: none;
-}
+  #butaolink:active{
+    color: white;
+    text-decoration: none;
+  }
