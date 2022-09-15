@@ -45,9 +45,7 @@ body {
       margin-right: 30px;
   }
 
-  a:hover{
-      color: #111;
-  }
+  
     
   nav{
       margin-top: 25px;
@@ -125,3 +123,9 @@ body {
     color: white;
     text-decoration: none;
   }
+
+
+
+.button:hover #butaolink {
+    color: white;
+}
